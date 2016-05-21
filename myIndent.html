@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>会员中心</title>
+	<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">	 -->
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/member.css" type="text/css">
+	<link rel="stylesheet" href="css/header.css" type="text/css">
+	<link rel="stylesheet" href="css/footer.css" type="text/css">
+	<script language="javascript" src="js/j.js"></script>
+	<!-- <script language="javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+
+
+	<!--页首header 开始 -->
+    	<header id="header">
+        	<section class="top_content">
+         		<div class="content_right">
+                    <div class="statusbar">
+                        <ul>                                        
+                            <li><a href="">收藏本店</a></li>
+                            <li><a href="">帮助中心</a></li>
+                            <li><a href="">我的HIDALGO</a></li>
+                            <li><a href="">注册</a></li>
+                            <li><a href="">登陆</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!--搜索框searchbox开始-->
+                    <div class="searchbox">
+                    	<div class="searchbox_left">
+                        	<form action="">
+                            	<input type="text" name="search" id="search"> 
+                                <a href="javascript:;" name="ss" id="ss"></a>
+                            </form>
+                        </div>
+                       	<div class="searchbox_right">
+                        	<a href="javascript:;" class="">去购物车结算</a>
+                        </div>
+                    </div>
+                    <!--搜索框searchbox 结束-->
+                    
+               	</div>
+            </section>
+        </header>
+        <!-- header结束-->
+        
+        <!--导航栏nav开始-->
+    	<nav id="nav">
+        	<section class="nav_content">
+         		<div class="logo">
+                	<img src="images/photo/logo.jpg" width="201" height="151" alt="logo"/>
+              		<div class="yy"></div>
+                </div>
+                <!--导航列表nav_item开始-->
+       			<nav class="nav_item">
+                	<ul>
+                		<a href="javascript:;" id="home" ></a>
+                		<li id="classify" >
+                        	<a href="javascript:;">商品分类</a>
+                        	
+                        </li>
+                		<li><a href="javascript:;" >冰啤</a></li>
+                		<li><a href="javascript:;">黑啤</a></li>
+                		<li><a href="javascript:;">黄啤</a></li>
+                		<li><a href="javascript:;">熟啤</a></li>
+                		<li><a href="javascript:;">生啤</a></li>
+                	</ul>
+                    
+                </nav>
+                <!--导航列表nav_item结束-->
+            </section>
+         	<!--商品分类二级菜单开始-->
+                <section id="classify_item">
+                     
+                    <article class="classify_item_center">
+                    	<article class="classify_item_content">
+               				<ul class="classify_item_content_list">
+               					<li><a href="" class="classify_current">听装组合</a></li>
+               					<li><a href="">混合装</a></li>
+               				</ul>
+               				<ul class="classify_item_content_list">
+               					<li><a href="">特度500ml</a></li>
+               					<li><a href="">小麦啤568ml</a></li>
+               				</ul>
+               				<ul class="classify_item_content_list">
+               					<li><a href="">黑啤500ml</a></li>
+               					<li><a href="">黄啤500ml</a></li>
+               				</ul>
+               				<ul class="classify_item_content_list">
+               					<li><a href="">小麦啤500ml</a></li>
+               					<li><a href="">小麦啤330ml</a></li>
+               				</ul>
+               				<ul class="classify_item_content_list">
+               					<li><a href="">大麦啤500ml</a></li>
+               					<li><a href="">555</a></li>
+               				</ul>
+                        </article>
+               
+                    </article>
+                 
+                </section>
+                <!--商品分类二级菜单结束-->
+        </nav>
+        <script type="text/javascript">
+        $('#classify').on({'click':function(){
+            $('#classify_item').slideToggle('slow');
+        }});
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 网页内容区域开始 -->
+<div class="container personal">
+	<div class="site_path">首页 > 个人中心</div>
+	
+	<aside class="personal_left">
+
+		<article class="personal_left_list personal_left_icon">
+			<header>个人中心</header>
+			<div>
+				<section>
+					<img src="images/touxiang.png">
+					<p>命犯桃花  <a href="#">[修改]</a></p>
+				</section>
+			</div>
+		</article>
+
+		<article class="personal_left_list personal_left_trade personal_list">
+			<header>交易管理</header>
+			<div>
+				<ul>
+					<li><a href="myindent.html">我的订单</a></li>
+					<li><a href="#">我的收藏</a></li>
+					<li><a href="#">我的HIDALGO币</a</li>
+					<li><a href="#">我的红包</a></li>
+					<li><a href="#">我的优惠券</a></li>
+					<li><a href="#">我的 VIP</a></li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="personal_left_list personal_left_serve personal_list">
+			<header>服务中心</header>
+			<div>
+				<ul>
+					<li><a href="#">我的退换货</a></li>
+					<li><a href="#">我的咨询</a></li>
+					<li><a href="#">我的评论</a</li>
+					<li><a href="#">我的投诉</a></li>
+					<li><a href="#">我的信息</a></li>
+					<li><a href="#">在线客服</a></li>
+				</ul>
+			</div>
+		</article>
+		<article class="personal_left_list personal_left_private personal_list">
+			<header>个人信息</header>
+			<div>
+				<ul>
+					<li><a href="#">编辑个人资料</a></li>
+					<li><a href="#">账号安全</a></li>
+					<li><a href="#">地址管理</a</li>
+					<li><a href="#">系统信息</a></li>
+				</ul>
+			</div>
+		</article>
+
+	</aside>
+
+	<section class="personal_right" style="display: inline-block;">	
+
+		<!-- 下面是订单块 -->
+		<article class="personal_right_indent">
+
+			<header class="head">
+				<span>最新订单 /Recent orders</span>
+				<a href="#">更多订单 ></a>
+			</header>
+
+			<div class="myClassify">
+				<a class="currentClassify" href="#">已完成</a>
+				<a href="#">待收货</a>
+				<a href="#">待评价</a>
+			</div>
+			
+			<!-- 订单头 -->
+			<ul class="shop_classify">
+				<li>商品信息</li>
+				<li>单价（元）</li>
+				<li>数量</li>
+				<li>实付款（元）</li>
+				<li>订单状态</li>
+				<li>操作</li>
+			</ul>
+
+
+			<!-- 在下面循环订单 -->
+			<section class="dingdan">
+				<div class="head">订单号：123455<span>下单时间：2015-12-07 21:32:02</span></div>
+
+				<div class="body">
+					<div class="list img"><img src="images/pijiu.png"></div>
+					<div class="list info"><a href="#">墨西哥原装进口 CORONA/科罗娜 啤酒小瓶 330ml/瓶</a></div>
+					<div class="list price">￥9.90</div>
+					<div class="list number">1</div>
+					<div class="list realmoney">￥19.90<br><span>（含快递：10.00元）</span></div>
+					<div class="list number">快递已发货<br><a href="#">物流进度</a></div>
+					<div class="list number"><a href="#">查看订单</a><br><a href="#">确认收货</a></div>
+				</div>
+
+			</section>
+			<!-- 在下面循环订单 -->
+			<section class="dingdan">
+				<div class="head">订单号：123455<span>下单时间：2015-12-07 21:32:02</span></div>
+
+				<div class="body">
+					<div class="list img"><img src="images/pijiu.png"></div>
+					<div class="list info"><a href="#">墨西哥原装进口 CORONA/科罗娜 啤酒小瓶 330ml/瓶</a></div>
+					<div class="list price">￥9.90</div>
+					<div class="list number">1</div>
+					<div class="list realmoney">￥19.90<br><span>（含快递：10.00元）</span></div>
+					<div class="list number">快递已发货<br><a href="#">物流进度</a></div>
+					<div class="list number"><a href="#">查看订单</a><br><a href="#">确认收货</a></div>
+				</div>
+
+			</section>
+
+
+
+
+			<!-- 在下面循环订单 -->
+			<section class="dingdan">
+				<div class="head">订单号：123455<span>下单时间：2015-12-07 21:32:02</span></div>
+
+				<div class="body">
+					<div class="list img"><img src="images/pijiu.png"></div>
+					<div class="list info"><a href="#">墨西哥原装进口 CORONA/科罗娜 啤酒小瓶 330ml/瓶</a></div>
+					<div class="list price">￥9.90</div>
+					<div class="list number">1</div>
+					<div class="list realmoney">￥19.90<br><span>（含快递：10.00元）</span></div>
+					<div class="list number">快递已发货<br><a href="#">物流进度</a></div>
+					<div class="list number"><a href="#">查看订单</a><br><a href="#">确认收货</a></div>
+				</div>
+
+			</section>
+
+			<!-- 在下面循环订单 -->
+			<section class="dingdan">
+				<div class="head">订单号：123455<span>下单时间：2015-12-07 21:32:02</span></div>
+
+				<div class="body">
+					<div class="list img"><img src="images/pijiu.png"></div>
+					<div class="list info"><a href="#">墨西哥原装进口 CORONA/科罗娜 啤酒小瓶 330ml/瓶</a></div>
+					<div class="list price">￥9.90</div>
+					<div class="list number">1</div>
+					<div class="list realmoney">￥19.90<br><span>（含快递：10.00元）</span></div>
+					<div class="list number">快递已发货<br><a href="#">物流进度</a></div>
+					<div class="list number"><a href="#">查看订单</a><br><a href="#">确认收货</a></div>
+				</div>
+
+			</section>
+
+			<!-- 在下面循环订单 -->
+			<section class="dingdan">
+				<div class="head">订单号：123455<span>下单时间：2015-12-07 21:32:02</span></div>
+
+				<div class="body">
+					<div class="list img"><img src="images/pijiu.png"></div>
+					<div class="list info"><a href="#">墨西哥原装进口 CORONA/科罗娜 啤酒小瓶 330ml/瓶</a></div>
+					<div class="list price">￥9.90</div>
+					<div class="list number">1</div>
+					<div class="list realmoney">￥19.90<br><span>（含快递：10.00元）</span></div>
+					<div class="list number">快递已发货<br><a href="#">物流进度</a></div>
+					<div class="list number"><a href="#">查看订单</a><br><a href="#">确认收货</a></div>
+				</div>
+
+			</section>
+
+			<!-- 在下面循环订单 -->
+			<section class="dingdan">
+				<div class="head">订单号：123455<span>下单时间：2015-12-07 21:32:02</span></div>
+
+				<div class="body">
+					<div class="list img"><img src="images/pijiu.png"></div>
+					<div class="list info"><a href="#">墨西哥原装进口 CORONA/科罗娜 啤酒小瓶 330ml/瓶</a></div>
+					<div class="list price">￥9.90</div>
+					<div class="list number">1</div>
+					<div class="list realmoney">￥19.90<br><span>（含快递：10.00元）</span></div>
+					<div class="list number">快递已发货<br><a href="#">物流进度</a></div>
+					<div class="list number"><a href="#">查看订单</a><br><a href="#">确认收货</a></div>
+				</div>
+
+			</section>
+
+
+			<div class="pageturning">
+				
+				<span class="sum">
+					共 6 条记录，1/1页
+				</span>
+
+				<a href="#">< 上一页</a>
+				<a href="#"> 1 </a>
+				<a href="#"> 上一页 ></a>
+			</div>
+
+		</article>
+
+		
+
+	</section>
+</div>
+
+<!-- 网页内容区域结束 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="clearboth"></p>
+
+   			<!-- 页尾 -->
+<footer id="footer">
+
+	<div class="top">
+		<div>
+			<img src="images/icon/baozhang.png" alt=""><span>100%品牌授权正品</span>
+			<img src="images/icon/songhuo.png" alt=""><span>7天无理由退换货</span>
+			<img src="images/icon/dianhua.png" alt=""><span>客服电话:400-889-9646 08:00-22:30(周一至周日) <a href="">在线客服</a></span>
+		</div>
+	</div>
+
+	<div class="mid">
+		<ul>
+			<li><a href="#">新手指南</a></li>
+			<li><a href="#">注册登录</a></li>
+			<li><a href="#">选购商品</a></li>
+			<li><a href="#">选购商品</a></li>
+			<li><a href="#">收货退款</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">会员中心</a></li>
+			<li><a href="#">BEER 币</a></li>
+			<li><a href="#">会员制度</a></li>
+			<li><a href="#">账户管理</a></li>
+			<li><a href="#">密码管理</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">购物指南</a></li>
+			<li><a href="#">购物专区</a></li>
+			<li><a href="#">尺码选择</a></li>
+			<li><a href="#">发票</a></li>
+			<li><a href="#">商品咨询</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">支付方式</a></li>
+			<li><a href="#">在线支付</a></li>
+			<li><a href="#">货到付款</a></li>
+			<li><a href="#">优惠券</a></li>
+			<li><a href="#">BEER 币支付</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">配送方式</a></li>
+			<li><a href="#">配送时间</a></li>
+			<li><a href="#">配送范围</a></li>
+			<li><a href="#">顺丰速运</a></li>
+			<li><a href="#">商品验收与签收</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">售后服务</a></li>
+			<li><a href="#">退换货政策</a></li>
+			<li><a href="#">退换货流程</a></li>
+			<li><a href="#">退换货方式与时效</a></li>
+			<li><a href="#">投诉与建议</a></li>
+		</ul>
+
+		<div class="erweima">
+			<div>关注我们<br>扫一扫<br>进入微信<br>公众号</div>
+			<img src="images/erweima.png" alt="">
+		</div>
+	</div>
+
+	<div class="bottom">
+		<a href="index.html">返回首页</a> | <a href="#">联系我们</a> | <a href="#">商家入驻</a> | <a href="#">隐私条款</a> | <a href="#">友情链接</a> <br>
+		CopyRight © 2007-2016 南京新与力文化传播有限公司 苏ICP备09011225号 NewPower Co. 版权所有 经营许可证编号：苏B2-20120395
+	</div>
+
+</footer>
+
+<script>
+	$(function(){
+		$('.personal_list header').on({'click':function(){
+			$(this).next().slideToggle('fast');
+		}});
+	});
+</script>
+
+</body>
+</html>

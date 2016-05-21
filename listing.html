@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>会员中心</title>
+	<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">	 -->
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/listing.css" type="text/css">
+	<link rel="stylesheet" href="css/header.css" type="text/css">
+	<link rel="stylesheet" href="css/footer.css" type="text/css">
+	<script language="javascript" src="js/j.js"></script>
+	<!-- <script language="javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+
+
+	<!--页首header 开始 -->
+    	<header id="header">
+        	<section class="top_content">
+         		<div class="content_right">
+                    <div class="statusbar">
+                        <ul>                                        
+                            <li><a href="">收藏本店</a></li>
+                            <li><a href="">帮助中心</a></li>
+                            <li><a href="">我的HIDALGO</a></li>
+                            <li><a href="">注册</a></li>
+                            <li><a href="">登陆</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!--搜索框searchbox开始-->
+                    <div class="searchbox">
+                    	<div class="searchbox_left">
+                        	<form action="">
+                            	<input type="text" name="search" id="search"> 
+                                <a href="javascript:;" name="ss" id="ss"></a>
+                            </form>
+                        </div>
+                       	<div class="searchbox_right">
+                        	<a href="javascript:;" class="">去购物车结算</a>
+                        </div>
+                    </div>
+                    <!--搜索框searchbox 结束-->
+                    
+               	</div>
+            </section>
+        </header>
+        <!-- header结束-->
+        
+        <!--导航栏nav开始-->
+    	<nav id="nav">
+        	<section class="nav_content">
+         		<div class="logo">
+                	<img src="images/photo/logo.jpg" width="201" height="151" alt="logo"/>
+              		<div class="yy"></div>
+                </div>
+                <!--导航列表nav_item开始-->
+       			<nav class="nav_item">
+                	<ul>
+                		<a href="javascript:;" id="home" ></a>
+                		<li id="classify" >
+                        	<a href="javascript:;">商品分类</a>
+                        	
+                        </li>
+                		<li><a href="javascript:;" >冰啤</a></li>
+                		<li><a href="javascript:;">黑啤</a></li>
+                		<li><a href="javascript:;">黄啤</a></li>
+                		<li><a href="javascript:;">熟啤</a></li>
+                		<li><a href="javascript:;">生啤</a></li>
+                	</ul>
+                    
+                </nav>
+                <!--导航列表nav_item结束-->
+            </section>
+         	<!--商品分类二级菜单开始-->
+                <section id="classify_item">
+                     
+                    <article class="classify_item_center">
+                    	<article class="classify_item_content">
+               				<ul class="classify_item_content_list">
+               					<li><a href="" class="classify_current">听装组合</a></li>
+               					<li><a href="">混合装</a></li>
+               				</ul>
+               				<ul class="classify_item_content_list">
+               					<li><a href="">特度500ml</a></li>
+               					<li><a href="">小麦啤568ml</a></li>
+               				</ul>
+               				<ul class="classify_item_content_list">
+               					<li><a href="">黑啤500ml</a></li>
+               					<li><a href="">黄啤500ml</a></li>
+               				</ul>
+               				<ul class="classify_item_content_list">
+               					<li><a href="">小麦啤500ml</a></li>
+               					<li><a href="">小麦啤330ml</a></li>
+               				</ul>
+               				<ul class="classify_item_content_list">
+               					<li><a href="">大麦啤500ml</a></li>
+               					<li><a href="">555</a></li>
+               				</ul>
+                        </article>
+               
+                    </article>
+                 
+                </section>
+                <!--商品分类二级菜单结束-->
+        </nav>
+        <script type="text/javascript">
+        $('#classify').on({'click':function(){
+            $('#classify_item').slideToggle('fast');
+        }});
+		</script>
+
+
+
+
+
+
+
+
+<!-- 网页内容区域开始 -->
+
+<div class="container listing">
+	<div class="site_path">首页 > 个人中心</div>
+
+	<div id="goods_classify">
+		<div class="classify_list brand_classify">
+			<span class="classify_item">品牌：</span>
+			<a href="#"><img src="images/icon/classify_icon/1.png" alt=""></a>
+			<a href="#"><img src="images/icon/classify_icon/2.png" alt=""></a>
+			<a href="#"><img src="images/icon/classify_icon/3.png" alt=""></a>
+			<a href="#"><img src="images/icon/classify_icon/4.png" alt=""></a>
+			<a href="#"><img src="images/icon/classify_icon/5.png" alt=""></a>
+			<a href="#"><img src="images/icon/classify_icon/6.png" alt=""></a>
+			<a href="#"><img src="images/icon/classify_icon/4.png" alt=""></a>
+			<a href="#"><img src="images/icon/classify_icon/5.png" alt=""></a>
+			<a href="#"><img src="images/icon/classify_icon/6.png" alt=""></a>
+			
+			<a href="#" class="moreBtn">更多</a>
+
+
+		</div>
+		<div class="classify_list wrapper_classify">
+			<span class="classify_item">包装种类：</span>
+
+			<a class="check" href="#">二十四瓶装</a>
+			<a class="check" href="#">箱装</a>
+			<a class="check" href="#">瓶装</a>
+			<a class="check" href="#">六瓶装</a>
+			<a class="check" href="#">三瓶装</a>
+
+			<a href="#" class="moreBtn">更多</a>
+		</div>
+		<div class="classify_list density_classify">
+			<span class="classify_item">啤酒麦汁浓度：</span>
+
+
+			<a class="check" href="#">重口味</a>
+			<a class="check" href="#">中浓度</a>
+			<a class="check" href="#">低浓度</a>
+
+			<a href="#" class="moreBtn">更多</a>
+		</div>
+		<div class="classify_list scene_classify">
+			<span class="classify_item">适用场景：</span>
+
+
+			<a class="check" href="#">团员小酌区</a>
+			<a class="check" href="#">商务宴请区</a>
+
+			<a href="#" class="moreBtn">更多</a>
+		</div>
+
+	</div>
+	
+	<div id="goods_order">
+		<div class="order_list">
+			<span class="order_item">包装：</span>
+
+			<a class="check default" href="#">默认</a>
+			<a class="check" href="#">新品</a>
+			<a class="check" href="#">销量</a>
+
+			<!-- 若是上升的话把 drop 改成 rise -->
+			<a class="check drop" href="#">价格</a>
+			<a class="check drop" href="#">折扣</a>
+
+		</div>
+	</div>
+
+	<div id="goods_container">
+
+
+		<!-- 下面放商品列表，循环goods_list即可 -->
+
+
+
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="goods_list">
+			 <img class="goods_img" src="images/goods_list.png" alt="">
+			 <img class="goods_note" src="images/icon/new.png" alt="">
+			 <div class="clearposition">
+			 	<p>￥59.00</p>
+			 	<a href="#">1919 酒类直供 科罗娜墨西哥进口啤酒 330ml*6 瓶装</a>
+			 	<div class="sumassess">
+			 		月成交<a href="#">67笔</a>
+			 		评价<a href="#">108</a>
+			 	</div>
+			 </div>
+		</div>
+
+
+		
+	</div>
+	
+	<div class="pageturning">
+		<a href="#" class="prev"><上一页</a>
+		<a href="#" class="">1</a>
+		<a href="#" class="">2</a>
+		<a href="#" class="">3</a>
+		<a href="#" class="">4</a>
+		<a href="#" class="next">上一页></a>
+		<span>共4页，</span>
+		<a href="#" class="toPage">到第</a>	
+		<input id="pageNumber" type="text" value="1">
+		<span>页</span>
+
+	</div>
+
+
+
+</div>
+
+<!-- 网页内容区域结束 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="clearboth"></p>
+   			<!-- 页尾 -->
+<footer id="footer">
+
+	<div class="top">
+		<div>
+			<img src="images/icon/baozhang.png" alt=""><span>100%品牌授权正品</span>
+			<img src="images/icon/songhuo.png" alt=""><span>7天无理由退换货</span>
+			<img src="images/icon/dianhua.png" alt=""><span>客服电话:400-889-9646 08:00-22:30(周一至周日) <a href="">在线客服</a></span>
+		</div>
+	</div>
+
+	<div class="mid">
+		<ul>
+			<li><a href="#">新手指南</a></li>
+			<li><a href="#">注册登录</a></li>
+			<li><a href="#">选购商品</a></li>
+			<li><a href="#">选购商品</a></li>
+			<li><a href="#">收货退款</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">会员中心</a></li>
+			<li><a href="#">BEER 币</a></li>
+			<li><a href="#">会员制度</a></li>
+			<li><a href="#">账户管理</a></li>
+			<li><a href="#">密码管理</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">购物指南</a></li>
+			<li><a href="#">购物专区</a></li>
+			<li><a href="#">尺码选择</a></li>
+			<li><a href="#">发票</a></li>
+			<li><a href="#">商品咨询</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">支付方式</a></li>
+			<li><a href="#">在线支付</a></li>
+			<li><a href="#">货到付款</a></li>
+			<li><a href="#">优惠券</a></li>
+			<li><a href="#">BEER 币支付</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">配送方式</a></li>
+			<li><a href="#">配送时间</a></li>
+			<li><a href="#">配送范围</a></li>
+			<li><a href="#">顺丰速运</a></li>
+			<li><a href="#">商品验收与签收</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">售后服务</a></li>
+			<li><a href="#">退换货政策</a></li>
+			<li><a href="#">退换货流程</a></li>
+			<li><a href="#">退换货方式与时效</a></li>
+			<li><a href="#">投诉与建议</a></li>
+		</ul>
+
+		<div class="erweima">
+			<div>关注我们<br>扫一扫<br>进入微信<br>公众号</div>
+			<img src="images/erweima.png" alt="">
+		</div>
+	</div>
+
+	<div class="bottom">
+		<a href="index.html">返回首页</a> | <a href="#">联系我们</a> | <a href="#">商家入驻</a> | <a href="#">隐私条款</a> | <a href="#">友情链接</a> <br>
+		CopyRight © 2007-2016 南京新与力文化传播有限公司 苏ICP备09011225号 NewPower Co. 版权所有 经营许可证编号：苏B2-20120395
+	</div>
+
+</footer>
+
+<script>
+	$(function(){
+		$('.personal_list header').on({'click':function(){
+			$(this).next().slideToggle('fast');
+		}});
+	});
+</script>
+
+</body>
+</html>

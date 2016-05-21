@@ -1,0 +1,98 @@
+@import "config";
+
+#footer{
+	margin-top: 18px;
+	background: #fff;
+	width: 100%;
+	height: $footer-height;
+	.top{
+		height: $footer-top-height;
+		line-height: $footer-top-height;
+		background-color: $nav-color;	
+		div{
+			width: $site-real-width;
+			height: $footer-top-height;
+			margin: 0px auto;
+			img{
+				float: left;
+				padding: 4px;
+				width: $footer-top-height - 8px;
+				height: $footer-top-height - 8px;
+				margin-left: 20px;
+			}
+			span{
+				float: left;
+				display: inline-block;
+				height: $footer-top-height;
+				padding-left: 20px;
+				color: #fff;
+				margin-right: 90px;
+			}
+			a{
+				color: #fff;
+			}
+		}
+	}
+	.mid{
+		height: $footer-mid-height - 20px;
+		padding-top: 20px;
+		width: $site-real-width - 30px;
+		border-bottom: 1px solid #ccc;
+		margin: 0px auto;
+
+		ul{
+			display: block;
+			height: $footer-mid-height - 20px;
+			width: $site-real-width / 8 + 10;
+			float: left;
+			padding: 0px;
+			margin: 0px;
+			list-style: none;
+
+			li{
+				line-height: 1.8em;
+				font-size: 12px;
+
+				&:first-child{
+					font-size: 14px;
+					a{
+						color: #000;
+					}
+				}
+				a{
+					color: #444;
+				}
+			}
+		}
+
+		.erweima{
+			height: $footer-mid-height - 20px;
+			float: left;
+
+			div{
+				display: inline-block;
+				height: 5.2em;
+				font-size: 12px;
+				line-height: 1.5em;
+				text-align: right;
+				padding-right: 5px;
+				font-size: 16px;
+			}
+			img{
+				float: right;
+			}
+		}
+
+	}
+	.bottom{
+		width: $site-real-width - 20px;
+		height: $footer-height - ($footer-mid-height + $footer-top-height) - 20px;
+		margin: 0px auto;
+		font-size: 12px;
+		padding: 10px;
+		line-height: ($footer-height - ($footer-mid-height + $footer-top-height)) / 3;
+		a{
+			color: #000;
+		}
+	}
+}

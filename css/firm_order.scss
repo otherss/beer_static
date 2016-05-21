@@ -1,0 +1,393 @@
+@import "config";
+
+#content{
+	
+	position: relative;
+	width:100%;
+	margin:0 auto;
+	z-index: 99;
+	background-color: $bodybg;
+	.site_path{
+		width:1200px;
+		margin: 0 auto;
+		font-size: 14px;
+		line-height: 50px;
+	}
+	.curr_steps{
+		position: relative;
+		width:1200px;
+		height: 6px;
+		left: 50%;
+		z-index: 99;
+		background-color: $nav-color;
+		margin-left: -600px;
+		margin-top: 20px;
+
+		.steps{
+			position: absolute;
+			width:30px;
+			height:30px;
+			border-radius:25px;
+			margin-top: -15px;
+			z-index: 999;
+			background-color:#fff;
+			border: 4px $nav-color solid;
+
+			p{
+				position: absolute;
+				left: -80%;
+				top:35px;
+				font-size: 14px;
+				width:80px;
+				text-align: center;
+
+
+			}
+		}
+		.steps1,.steps2{
+			background-color:  $nav-color;
+		}
+		.steps1{
+			left:10%;
+			margin-left: -20px;
+		}
+		.steps2{
+			left:50%;
+			margin-left: -20px;
+		}
+		.steps3{
+			left:90%;
+			margin-left: -20px;
+		}
+	}
+
+	.order_form{
+		
+		
+		width: 1200px;
+		margin: 55px auto 0;
+		
+		// 收货地址样式
+		.shipping_address,.public_style{
+			background-color: #fff;
+			padding: 20px;
+			margin: 20px 0px;
+
+			header h3{
+			font-weight: normal;
+			}
+
+			ul{
+				margin-left: 20px;
+				margin-top: 20px;
+				.shipping_address_item{
+					height:36px;
+					line-height: 35px;
+					color:#333;
+					width:520px;
+					padding-left:5px;
+					margin:20px 0;
+					&.checked{
+						border:1px $nav-color solid;
+					}
+					input{
+						border:1px $nav-color solid;
+					}
+					span{
+						margin:0 6px;
+
+					}
+					.consignee,.tel{
+						font-size: 14px;
+					}
+					.detailed_address{
+						font-size: 12px;
+						color:#999;
+					}
+
+				}
+			}
+		}
+		// 支付方式样式
+		.payment_mode{
+			ul{ 
+
+				li{
+					width:105px;
+					height:25px;
+					border:1px #999 solid;
+					float: left;
+					margin: 0 25px;
+					a{
+						display: block;
+						width:100%;
+						height: 100%;
+						text-align: center;
+						line-height: 25px;
+						font-size: 14px;
+						color:#333;
+
+					}
+				}
+				.current_mode{
+					border:2px $nav-color solid;
+					position:relative;
+					&:before{
+						content: "";
+						position: absolute;
+						width:20px;
+						height:13px;
+						display: block;
+						background:url(../images/icon/gou.png) no-repeat;
+						bottom:0px;
+						right:0px;
+					}
+				}
+			}
+		}
+
+		// 订单列表样式
+		.order_form_list{
+			width:1200px;
+			margin:0 auto;
+			border:1px #ccc solid;
+			
+			background-color: #fff;
+			table{
+				border-collapse:collapse;width:100%;
+				tr{
+					th{
+						height:45px;
+						font-size: 12px;
+						font-weight: normal;
+						text-align: left;
+						&:nth-child(1){
+							padding-left:10px;
+							input{
+								
+								margin-right:10px;
+							}
+						}
+
+					}
+
+					.goods_img{
+						width:200px;
+						height:130px;
+						text-align: center;
+						img{
+							width:100px;
+							height:100px;
+							vertical-align:middle;
+							margin-left: 20px;
+						}
+					}
+					.goods_info{
+						font-size: 12px;
+						width:250px;
+						a{
+							display: block;
+							width: 200px;
+							color: #333;
+							&:hover{
+									color:#000;
+								}
+						}
+					}
+					.goods_price{
+						color:red;
+						width:150px;
+					}
+					.freight{
+						color:#999;
+						width:150px;
+
+					}
+					.goods_number{
+						width:150px;
+					}
+					.goods_sum{
+						color:red;
+						font-weight: bold;
+						width:150px;
+					}
+					.operation{
+						font-size: 14px;
+						p{	
+							width:100px;
+							text-align: center;
+							a{
+								color:#333;
+								&:hover{
+									color:#000;
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+		// 提交订单
+		.submit_order_form{
+			margin-top: 20px;
+			position:relative;
+			height:160px;
+			.contact_way{
+				position: absolute;
+				right:0px;
+				padding:10px;
+				width:345px;
+				height:80px;
+				border:1px $nav-color solid;
+				background-color: #fff;
+				p{	
+					line-height: 25px;
+					text-align: right;
+					font-size: 14px;
+					font-weight: bold;
+					span{
+						font-weight: normal;
+					}
+					.money{
+						
+						font-size: 16px;
+						color:red;
+					}
+					.consignee{
+						margin-right:4px;
+					}
+
+				}
+
+				.submit_btn{
+					width:135px;
+					height: 50px;
+					position: absolute;
+					
+					right:-1px;
+					bottom:-50px;
+					a{
+						display: block;
+						width:100%;
+						height:100%;
+						background-color: $nav-color;
+						color:#fff;
+						font-weight: bold;
+						font-size: 16px;
+						line-height: 50px;
+						text-align: center;
+					}
+
+				}
+			}
+
+
+		}
+
+	}
+	
+	// 猜你喜欢
+	.guess_you_like{
+		width:1200px;
+		height:300px;
+		margin: 20px auto;
+		header{ 
+			border-bottom: 2px $nav-color solid;
+			position: relative;
+			h3{
+				background-color: $nav-color;
+				line-height: 45px;
+				width:200px;
+				height:45px;
+				font-size: 16px;
+				font-weight: normal;
+				color: #fff;
+				text-align: center;
+				
+			}
+			span{
+				position: absolute;
+				font-size: 14px;
+				
+				right:0px;
+				bottom:5px;
+				a{
+					color: #333;
+					&:hover{
+						color:#000;
+					}
+				}
+			}
+		}
+
+
+		.guess_you_like_cont{
+			background-color: #fff;
+			margin-top: 10px;
+			padding: 15px 60px;
+			position: relative;
+			height:250px;
+			@include box-sizing(border-box);
+			ul {
+				position: absolute;
+				li{
+					width:190px;
+					height:190px;
+					position:relative;
+					border:1px #ccc solid;
+					float:left;
+					margin:0 9px;
+					padding:5px;
+					&:nth-child(1){
+						margin-left:0px;
+					}
+					div{
+						text-align: center;
+						img{
+							height: 165px;
+						}
+						
+					}
+					
+					.price{
+							font-size: 14px;
+							color: red;
+						}
+					.title{
+
+						font-size: 12px;
+						color:#333;
+						text-overflow:ellipsis;
+						display: block;
+						height:20px;
+						width: 100%;
+						position: absolute;
+						bottom:-20px;
+						line-height: 20px;
+					}
+
+				}
+			}
+			.toleft,.toright{
+				position: absolute;
+				width:50px;
+				height:100%;
+				text-align: center;
+				font-size: 60px;
+				top:0px;
+				cursor: pointer;
+
+			}
+			.toleft{
+				background: url(../images/icon/toleft.png) no-repeat center;
+				left: 0px;
+			}
+			.toright{
+				background: url(../images/icon/toright.png) no-repeat center;
+				right: 0px;
+			}
+		}
+
+	}
+}

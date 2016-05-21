@@ -1,0 +1,582 @@
+@import "config";
+
+
+
+
+.personal,.content{
+	margin: 0px auto;
+	width: $site-real-width;
+	height: content;
+	padding: 0px;
+	font-size: 0px;
+
+
+	.personal_left,.personal_right{
+		float: left;
+		top: $site-path-height;
+		height: content;
+		display: inline-block;
+
+	}
+	.personal_left{
+		width: $personal-left-width - 2;
+		height: content;
+		left: 0px;
+		margin-bottom: 18px;
+		font-size: 16px;
+
+		.personal_left_list{
+			border-left: solid 1px $nav-color;
+			border-right: solid 1px $nav-color;
+			display: block;			
+			header{
+				color: #fff;
+				line-height: $personal-left-head-height;
+				text-indent:2em;
+				background-color: $nav-color;
+			}
+			div{
+				width: $personal-left-width;
+			}
+			
+		}
+		.personal_left_icon{
+			height: $personal-left-icon-height;
+
+			div{
+				text-indent:0px;
+				height: $personal-left-icon-height - $personal-left-head-height;
+
+				section{
+					width: 132px;
+					margin:16px auto 0px auto;
+
+					img{
+						width: $personal-touxiang-size;
+						height: $personal-touxiang-size;
+						margin: 0px;
+						padding: 0px;
+					}
+					p{
+						display: block;
+						margin: 0px;
+						padding: 0px;
+						font-size: 14px;
+						
+						a{
+							float: right;
+							text-decoration: none;
+							color: #666;
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+
+		.personal_list{
+
+			header{
+				background:$nav-color url('../images/icon/-.png') 70% center no-repeat;
+				cursor: pointer;
+				@include transition(background 0.5s ease);
+				&:hover{
+					background-image:url('../images/icon/+.png');
+				}
+			}
+
+			div{ 
+				padding-bottom: 8px;
+				ul{
+				display: block;
+				padding: 11px auto 11px 20px;
+				list-style: none;
+					li{
+						padding: 5px;
+
+						a{
+							font-size: 14px;
+							text-decoration: none;
+							color: #000;
+						}
+					}
+				}
+			}
+
+		}
+		.personal_list:last-child{
+			border-bottom: solid 1px $nav-color;			
+		}
+
+	}
+	.personal_right{
+		min-height: 1020px;
+		right: 0px;
+		margin-left: $site-real-width - ($personal-left-width + $personal-right-width);
+		width: $personal-right-width;
+
+		.personal_right_wallet{
+			width: $personal-right-width;
+			height: 100px;
+			border-top: 3px solid $nav-color;
+			background-color: #fff;
+			margin-bottom: 18px;
+
+			ul{
+				list-style: none;
+				li{
+					display: inline-block;
+					font-size: 18px;
+					height: 100px;
+					line-height: 100px;
+					width: 33%;
+					text-align: center;
+					a{
+						text-decoration: none;
+						color: red;
+						font-size: 24px;
+					}
+				}
+			}
+		}
+		header.head{
+			width: $personal-right-width;
+			height: 45px;
+			line-height: 45px;
+			border-bottom: 2px solid $nav-color;
+			margin-bottom: 11px;
+			font-size: 16px;
+
+			span{
+				display: inline-block;
+				width: 204px;
+				height: 45px;
+				background-color: $nav-color;
+				font-size: 16px;
+				text-align: center;
+				line-height: 45px;
+				color: #fff;
+			}
+
+			a{
+				padding-top: 7px;
+				font-size: 14px;
+				color: #333;
+				float: right;
+			}
+		}
+		.personal_right_indent{
+			height: content;
+			width: $personal-right-width;
+			margin-bottom: 20px;
+			
+			
+
+			ul.shop_classify{
+				display: block;
+				background-color: #fff;
+				color: #333;
+				width: 100%;
+				list-style: none;
+				line-height: 46px;
+				padding: 0px;
+				margin: 0px 0px 11px 0px;
+
+				li{
+					font-size: 13px;
+					display: inline-block;
+					margin: auto 35px;
+				}
+				li:first-child{
+					width:330px;
+					margin: auto 15px;
+				}
+			}
+
+			section.dingdan{
+				height: 201px;
+				width: $personal-right-width;
+				background-color: #fff;
+				margin-bottom: 11px;
+
+				div.head{
+					width: $personal-right-width - 30;
+					height: 45px;
+					line-height: 45px;
+					padding: 0px 15px;
+					border-bottom: 1px solid #ccc;
+					font-size: 13px;
+					span{
+						float: right;
+					}
+				}
+
+				div.body{
+					width: $personal-right-width;
+					height: 155px;
+					line-height: 155px;
+					padding: 0px;
+					margin: 0px;
+					position: relative;
+
+
+					div.list{
+						height: 155px;
+						position: absolute;
+						top: 0px;
+						font-size: 14px;
+						text-align: center;
+
+						&:nth-child(1){
+							padding-top: 10px;
+							height: 145px;
+							width: 122px;
+							left: 0px;						
+						}
+						&:nth-child(2){
+							height: 105px;
+							left: 122px;
+							width: 171px;
+							line-height: 1.2em;
+							padding: 50px 25px 0px 25px;
+							a{
+								color: #333;
+							}
+						}
+						&:nth-child(3){
+							width: 120px;
+							left: 360px;					
+						}
+						&:nth-child(4){
+							width: 120px;
+							left: 485px;						
+						}
+						&:nth-child(5){
+							height: 100px;
+							padding-top: 55px;
+							width: 120px;
+							left: 615px;	
+							line-height: 1.2em;
+							span{
+								font-size: 12px;
+								color: #aaa;
+							}				
+						}
+						&:nth-child(6){
+							height: 100px;
+							padding-top: 55px;
+							width: 120px;
+							left: 750px;	
+							line-height: 1.2em;
+							a{
+								font-size: 16px;
+								color: #0099CC;
+							}				
+						}
+						&:nth-child(7){
+							height: 100px;
+							padding-top: 55px;
+							width: 120px;
+							left: 855px;	
+							line-height: 1.2em;
+							a{
+								font-size: 14px;
+								color: #0099CC;
+							}				
+						}
+					}
+
+
+				}
+					
+			}
+
+		}
+		.myMessageDetailed{
+			font-size: 14px;
+			background-color: #fff;
+			padding: 11px 0px;
+			header.myMessageDetailedTitle{
+				text-align: center;
+				font-size: 18px;
+			}
+			section{
+				border-bottom: 2px solid $nav-color;
+				width: 96%;
+				margin: 10px auto;
+				padding: 10px 0px;
+			}
+			span{
+				margin: 0px 20px;
+				color: #999;
+			}
+			.classname{
+				float: right;
+			}
+		}
+		.myClassify{
+			background-color: #fff;
+			width: 100%;
+			height: 55px;
+			line-height: 45px;
+			margin-bottom: 11px;
+
+			.currentClassify{
+				border-bottom: 4px solid $nav-color;
+			}
+			a{
+				font-size: 14px;
+				color: #222;
+				padding: 8px;
+				margin: 0px 20px;
+				&:hover{
+					border-bottom: 4px solid $nav-color;
+				}
+			}
+		}
+		.messageList{
+			height: 90px;
+			width: $personal-right-width;
+			background-color: #fff;
+			margin-bottom: 11px;
+
+			.messageTitle{
+				height: 45px;
+				line-height: 45px;
+				h3{
+					padding: 0px 20px;
+					margin: 0px;
+					font-size: 18px;
+					display: inline-block;
+					font-weight: normal;
+					font-style: normal;
+				}
+				.messageDate{
+					float: right;
+					font-size: 16px;
+					color: #999;
+					padding-right: 20px;
+				}
+
+			}
+			.messageAbbreviation{
+				height: 45px;
+				line-height: 45px;
+				font-size: 16px;
+				color: #000;
+				p{
+					display: inline-block;
+					width: $personal-right-width / 3 * 2;
+					padding: 0px 20px;
+					margin: 0px 10px;
+					text-indent: 2em;
+					text-overflow:ellipsis;
+					overflow:hidden;
+					white-space:nowrap;
+				}
+				a{
+					float: right;
+					color: blue;
+					margin-right: 20px;
+				}
+			}
+		}
+		.personal_right_guess{
+			height: $personal-right-guess-height + 11;
+			width: $personal-right-width;
+			overflow: hidden;
+
+			.personal_right_guess_list_container{
+				height: $personal-right-guess-list-height * 2 + $personal-right-guess-pageturning-height;
+				width: $personal-right-width;
+				background: #fff;
+
+				.guessYouLike{
+					font-size: 14px;
+					display: inline-block;
+					float: left;
+					width: $personal-right-guess-list-width;
+					height: $personal-right-guess-list-height;
+					text-align: center;
+					@include box-sizing(border-box);
+					overflow: hidden;
+					img{
+						border-image-width: 0px;
+						width:  $personal-right-guess-list-width;
+						height: 150px;
+						margin-bottom: 20px;
+					}
+					a{
+						line-height: 1.3em;
+						color: #333;
+						span{
+							color: red;
+							font-size: 16px;
+						}
+						s{
+							font-size: 12px;
+							color: #999;
+						}
+					}
+				}
+			}
+		}
+		.pageturning{
+				height: $personal-right-guess-pageturning-height;
+				line-height: $personal-right-guess-pageturning-height;
+				float: right;
+				background-color: #fff;
+				width: 100%;
+				text-align: right;
+				margin-bottom: 18px;
+				.sum{
+					float: left;
+					font-size: 14px;
+					padding-left: 20px;
+				}
+				a{
+					@include transition(color 0.2s ease);
+					padding: 5px;
+					font-size: 12px;
+					color: #444;
+					&:hover{
+						color: #000;
+					}
+					&:first-child{
+						margin-right: 10px;
+					}
+					&:last-child{
+						margin-left: 10px;
+						margin-right: 10px;
+					}
+				}
+		}
+		.address{
+			header.head{
+				height: 40px;
+				line-height: 40px;
+				padding-left: 20px;
+				background-color: $nav-color;
+				font-size: 14px;
+				color: #fff;
+				margin-bottom: 18px;
+			}
+			.address_list{
+				margin-bottom: 18px;
+				height: 105px;
+				background-color: #fff;
+				font-size: 14px;
+				padding: 0px 35px;
+				padding-top: 15px;
+				header{
+					font-size: 16px;
+					height: 30px;
+					line-height: 30px;
+					font-weight: bold;
+				}
+				p{
+					padding: 3px 5px;
+					margin: 0px;
+				}
+				.setDefault{
+					margin-top: 10px;
+					display: block;
+					height: 60px;
+					width: 100px;
+					float: right;
+					.setDefaultBtn{
+						display: block;
+						height: 25px;
+						line-height: 25px;
+						width: 100px;
+						text-align: center;
+						color: #fff;
+						background-color: $nav-color;
+					}
+					.default{
+						background-color: #ccc;
+					}
+					a{
+						padding: 5px;
+						color: #333;
+					}
+					.changeBtn{
+						height: 35px;
+						line-height: 35px;
+						.change{
+							margin-left: 13px;
+						}					
+					}
+				}
+			}
+			#add{
+				font-size: 16px;
+				background-color: #fff;
+				padding: 10px 20px;
+
+				header{
+					font-size: 18px;
+					font-weight: bold;
+				}
+				form{
+					margin-top: 10px;
+
+					table{
+						tr{
+							td{
+								padding: 10px;
+								span{
+									background: url(../images/icon/gantanhao.png) 4px center no-repeat;
+									padding-left: 20px;
+									color: #ccc;
+								}
+								input{
+									height: 30px;
+								}
+								#addBtn{
+									background-color: $nav-color;
+									color: #fff;
+									border: none;
+									padding: 0px 40px;
+									font-size: 18px;
+									font-weight: bold;
+									height: 40px;
+									line-height: 40px;
+								}
+								#addSite{
+									width: 480px;
+								}
+								&:first-child{
+									width: 110px;
+									text-align: right;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

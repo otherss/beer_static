@@ -1,0 +1,539 @@
+body {
+  background-color: #ececec; }
+
+a {
+  text-decoration: none; }
+
+input {
+  outline: none; }
+
+.clearboth {
+  clear: both; }
+
+.container {
+  width: 1200px;
+  margin: 0px auto; }
+
+.site_path {
+  height: 50px;
+  position: relative;
+  line-height: 50px;
+  text-align: left;
+  font-size: 14px;
+  background-color: #ececec;
+  z-index: 70; }
+
+.pageturning {
+  height: 30px;
+  text-align: right;
+  margin-bottom: 18px; }
+  .pageturning a {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333; }
+    .pageturning a.toPage {
+      background: none; }
+  .pageturning #pageNumber {
+    width: 30px;
+    height: 20px;
+    text-align: center; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px; }
+
+.clear_both {
+  clear: both; }
+
+/*//================Index=========================*/
+.site_path {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 50px; }
+
+.curr_steps {
+  position: relative;
+  width: 1200px;
+  height: 6px;
+  left: 50%;
+  z-index: 99;
+  background-color: #81a090;
+  margin-left: -600px;
+  margin-top: 20px; }
+  .curr_steps .steps {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: -15px;
+    z-index: 999;
+    background-color: #fff;
+    border: 4px #81a090 solid; }
+    .curr_steps .steps p {
+      position: absolute;
+      left: -80%;
+      top: 35px;
+      font-size: 14px;
+      width: 80px;
+      text-align: center; }
+  .curr_steps .stepsbgcolor {
+    background-color: #81a090; }
+  .curr_steps .steps1 {
+    left: 10%;
+    margin-left: -20px; }
+  .curr_steps .steps2 {
+    left: 50%;
+    margin-left: -20px; }
+  .curr_steps .steps3 {
+    left: 90%;
+    margin-left: -20px; }
+
+#details {
+  width: 1200px;
+  height: content;
+  overflow: hidden; }
+  #details .left {
+    display: block;
+    padding-top: 10px;
+    width: 400px;
+    height: 440px;
+    float: left;
+    background-color: #fff; }
+  #details .center {
+    width: 130px;
+    height: 450px;
+    position: relative;
+    padding: 0px 15px;
+    float: left; }
+    #details .center #prev, #details .center #next {
+      position: absolute;
+      width: 128px;
+      height: 14px;
+      left: 50%;
+      margin-left: -64px;
+      z-index: 3;
+      background-size: 50%; }
+    #details .center #prev {
+      top: 0px;
+      background: #ccc url(../images/icon/sanjiaoshang.png) no-repeat center; }
+    #details .center #next {
+      bottom: 0px;
+      background: #ccc url(../images/icon/sanjiaoxia.png) no-repeat center; }
+    #details .center .imgs {
+      margin-top: 20px;
+      height: 440;
+      font-size: 0px; }
+      #details .center .imgs img {
+        height: 128px;
+        width: 128px;
+        margin-top: 8px;
+        border: 2px #ccc solid; }
+        #details .center .imgs img:first-child {
+          margin-top: 0px; }
+        #details .center .imgs img.current, #details .center .imgs img:hover {
+          border: 2px #333 solid; }
+  #details .right {
+    width: 640px;
+    height: 450px;
+    background-color: #fff;
+    float: left;
+    position: relative; }
+    #details .right header {
+      padding: 0px 20px; }
+      #details .right header h3 {
+        padding: 17px 0px;
+        margin: 0px;
+        font-weight: normal; }
+      #details .right header span {
+        color: red; }
+    #details .right table {
+      margin-left: 20px; }
+      #details .right table tr:first-child {
+        width: 50px; }
+      #details .right table tr:nth-child(1) td:nth-child(2) {
+        color: #777; }
+      #details .right table tr:nth-child(2) td:nth-child(2) {
+        color: red; }
+        #details .right table tr:nth-child(2) td:nth-child(2) span {
+          font-size: 24px; }
+      #details .right table tr:nth-child(3) {
+        padding-bottom: 15px; }
+        #details .right table tr:nth-child(3) td:nth-child(2) span {
+          margin-left: 20px; }
+      #details .right table tr:nth-child(4) {
+        color: #777; }
+        #details .right table tr:nth-child(4) td:nth-child(2) {
+          display: block;
+          width: 520px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #ccc; }
+          #details .right table tr:nth-child(4) td:nth-child(2) span {
+            display: inline-block;
+            margin-right: 15px; }
+            #details .right table tr:nth-child(4) td:nth-child(2) span span {
+              margin-left: 5px; }
+            #details .right table tr:nth-child(4) td:nth-child(2) span:nth-child(1) span {
+              color: #CC9933; }
+            #details .right table tr:nth-child(4) td:nth-child(2) span:nth-child(2) span {
+              color: #66CCCC; }
+            #details .right table tr:nth-child(4) td:nth-child(2) span:nth-child(3) span {
+              color: #CC3333; }
+            #details .right table tr:nth-child(4) td:nth-child(2) span.yuexiaoliang {
+              padding-left: 25px;
+              background: url(../images/icon/wode.png) no-repeat 5px center;
+              background-size: 20px; }
+            #details .right table tr:nth-child(4) td:nth-child(2) span.leiji {
+              padding-left: 25px;
+              background: url(../images/icon/pingjia.png) no-repeat left center;
+              background-size: 20px; }
+            #details .right table tr:nth-child(4) td:nth-child(2) span.jifen {
+              padding-left: 25px;
+              background: url(../images/icon/xiangqing.png) no-repeat left center;
+              background-size: 20px; }
+      #details .right table tr:nth-child(5) td:nth-child(2) {
+        color: #777; }
+        #details .right table tr:nth-child(5) td:nth-child(2) input {
+          margin-right: 10px;
+          width: 70px;
+          text-align: center; }
+        #details .right table tr:nth-child(5) td:nth-child(2) span {
+          margin-left: 10px; }
+      #details .right table tr:nth-child(6) td:nth-child(2) {
+        color: #777;
+        font-size: 20px; }
+        #details .right table tr:nth-child(6) td:nth-child(2) .buy {
+          margin-right: 10px;
+          width: 200px;
+          height: 60px;
+          border: #81a090 solid 2px;
+          background-color: #fff; }
+        #details .right table tr:nth-child(6) td:nth-child(2) .shoppingCart {
+          background: url(../images/icon/gouwuche.png) no-repeat 30px center;
+          background-size: 22px;
+          padding-left: 25px;
+          margin: 0px;
+          display: inline-block;
+          text-align: center;
+          width: 180px;
+          height: 64px;
+          line-height: 64px;
+          background-color: #81a090;
+          color: #fff; }
+      #details .right table tr td {
+        padding-top: 20px; }
+        #details .right table tr td:first-child {
+          color: #999;
+          padding-right: 10px; }
+    #details .right .collect {
+      height: 40px;
+      line-height: 40px;
+      text-align: right; }
+      #details .right .collect a {
+        background-color: #333;
+        padding-right: 25px;
+        color: #888;
+        margin-right: 15px; }
+        #details .right .collect a#share {
+          background: url(../images/icon/fenxiang.png) no-repeat right center;
+          background-size: 15px; }
+        #details .right .collect a#collect {
+          background: url(../images/icon/shoucang_kongxin.png) no-repeat right center;
+          background-size: 15px; }
+
+#look header {
+  height: 50px;
+  line-height: 50px;
+  padding: 0px;
+  margin: 0px; }
+
+#look_container {
+  position: relative;
+  height: 255px;
+  width: 1200px;
+  background-color: #fff;
+  margin-bottom: 18px; }
+  #look_container #switchBtn {
+    height: 225px;
+    width: 70px;
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+    #look_container #switchBtn #prevBtn, #look_container #switchBtn #nextBtn {
+      display: block;
+      height: 104.5px;
+      line-height: 104.5px;
+      text-align: center;
+      width: 100%;
+      border: 2px solid #ccc;
+      font-size: 50px;
+      color: #999; }
+    #look_container #switchBtn #prevBtn {
+      margin-bottom: 10px; }
+  #look_container #other {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 1100px;
+    height: 225px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px; }
+    #look_container #other #other_box {
+      height: 225px;
+      font-size: 0px; }
+      #look_container #other #other_box .look_list {
+        display: block;
+        float: left;
+        width: 200px;
+        height: 225px;
+        margin: 0px 10px; }
+        #look_container #other #other_box .look_list img {
+          width: 198px;
+          height: 198px;
+          border: #ccc solid 1px; }
+        #look_container #other #other_box .look_list .price {
+          display: block;
+          margin-top: -25px;
+          margin-left: 5px;
+          color: red;
+          font-size: 14px; }
+        #look_container #other #other_box .look_list p {
+          display: block;
+          width: 198;
+          margin: 0px auto;
+          font-size: 12px;
+          margin-top: 15px;
+          color: #333;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap; }
+
+#info {
+  width: 1200px;
+  height: content; }
+  #info .info_left {
+    float: left;
+    width: 190px;
+    height: content; }
+    #info .info_left .adlist {
+      display: block;
+      width: 190px;
+      height: 270px;
+      margin-bottom: 20px; }
+    #info .info_left .recommend header {
+      border: 1px solid #ccc;
+      height: 30px;
+      line-height: 30px;
+      padding: 0px 10px;
+      background-color: #fff; }
+      #info .info_left .recommend header a {
+        float: right;
+        color: #333; }
+    #info .info_left .recommend .recommend_list {
+      display: block;
+      height: 265px;
+      width: 190px;
+      margin-bottom: 20px;
+      background-color: #fff; }
+      #info .info_left .recommend .recommend_list img {
+        width: 190px;
+        height: 190px; }
+      #info .info_left .recommend .recommend_list p {
+        font-size: 12px;
+        padding: 0px 5px;
+        color: #333; }
+      #info .info_left .recommend .recommend_list span {
+        display: block;
+        font-size: 14px;
+        padding: 0px;
+        margin-top: -10px;
+        color: red; }
+  #info .info_right {
+    width: 1000px;
+    float: right; }
+    #info .info_right #parameter {
+      height: 290px;
+      background-color: #fff;
+      margin-bottom: 18px; }
+      #info .info_right #parameter header {
+        width: 95%;
+        margin: 0px auto;
+        height: 60px;
+        line-height: 60px;
+        padding: 0px;
+        border-bottom: 1px solid #ccc; }
+        #info .info_right #parameter header a {
+          padding: 3px 0px;
+          margin-right: 15px;
+          color: #333; }
+          #info .info_right #parameter header a:hover, #info .info_right #parameter header a.current_list {
+            border-bottom: 4px solid #81a090; }
+      #info .info_right #parameter table#parameter_list1 tr {
+        color: #777; }
+        #info .info_right #parameter table#parameter_list1 tr:first-child {
+          font-size: 18px;
+          color: #333; }
+          #info .info_right #parameter table#parameter_list1 tr:first-child td {
+            font-size: 18px; }
+        #info .info_right #parameter table#parameter_list1 tr td {
+          font-size: 16px;
+          padding: 7px 25px;
+          padding-right: 60px; }
+    #info .info_right .coupon {
+      display: block;
+      height: 290px;
+      width: 1000px;
+      margin-bottom: 18px; }
+    #info .info_right #right_ad {
+      height: 355px;
+      width: 1000px;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      font-size: 0px; }
+      #info .info_right #right_ad .right_adlist {
+        display: block;
+        float: left;
+        width: 300px;
+        height: 355px;
+        background-color: #fff;
+        overflow: hidden;
+        margin-right: 50px; }
+        #info .info_right #right_ad .right_adlist:last-child {
+          margin-right: 0px; }
+        #info .info_right #right_ad .right_adlist img {
+          margin-top: -20px;
+          width: 300px;
+          height: 300px; }
+        #info .info_right #right_ad .right_adlist p {
+          font-size: 12px;
+          text-align: center;
+          color: #fff;
+          background-color: #FFCC00;
+          margin: 0px 30px;
+          padding: 2px 0px; }
+        #info .info_right #right_ad .right_adlist a.adlist_title {
+          font-size: 14px;
+          padding: 4px 0px;
+          display: block;
+          color: #0099CC;
+          margin: 0px 30px; }
+        #info .info_right #right_ad .right_adlist span {
+          display: inline-block;
+          font-size: 12px;
+          margin: 3px 30px; }
+        #info .info_right #right_ad .right_adlist a.buy {
+          display: block;
+          float: right;
+          padding: 2px 4px;
+          font-size: 12px;
+          margin-right: 30px;
+          border: 1px solid #FFCC00; }
+    #info .info_right .detail_list {
+      width: 1000px;
+      margin-bottom: 18px; }
+    #info .info_right #commend header {
+      display: block;
+      border-top: 5px solid #81a090;
+      background-color: #fff;
+      margin-bottom: 18px;
+      height: 107px;
+      padding: 5px; }
+      #info .info_right #commend header div {
+        float: left; }
+        #info .info_right #commend header div:nth-child(1) {
+          width: 115px;
+          height: 100px; }
+          #info .info_right #commend header div:nth-child(1) p {
+            padding: 3px;
+            margin: 0px;
+            text-align: center;
+            font-size: 14px; }
+          #info .info_right #commend header div:nth-child(1) span {
+            font-size: 50px;
+            text-align: center;
+            color: red;
+            display: block; }
+            #info .info_right #commend header div:nth-child(1) span:last-child {
+              font-size: 14px; }
+        #info .info_right #commend header div:nth-child(2) {
+          width: 16px;
+          height: 80px;
+          padding: 0px 25px;
+          margin-top: 15px;
+          line-height: 1em;
+          border-left: 2px solid #ccc;
+          border-right: 2px solid #ccc; }
+        #info .info_right #commend header div:nth-child(3) {
+          height: 107px;
+          line-height: 107px;
+          text-align: center; }
+          #info .info_right #commend header div:nth-child(3) span {
+            padding: 5px;
+            border: 2px solid #CC0033;
+            margin-left: 40px; }
+    #info .info_right #commend table {
+      margin-bottom: 18px;
+      width: 1000px; }
+      #info .info_right #commend table tr {
+        background-color: #fff;
+        border-bottom: 2px solid #ccc;
+        font-size: 14px; }
+        #info .info_right #commend table tr:last-child {
+          border: none; }
+        #info .info_right #commend table tr:nth-child(1) {
+          border: none;
+          height: 45px;
+          font-size: 16px;
+          margin-bottom: 11px; }
+        #info .info_right #commend table tr:nth-child(2) {
+          border: none;
+          height: 9px;
+          background-color: #ececec; }
+        #info .info_right #commend table tr td {
+          text-align: center; }
+          #info .info_right #commend table tr td:nth-child(1) {
+            padding: 13px 30px;
+            text-align: left;
+            width: 35%; }
+    #info .info_right #record {
+      margin-bottom: 18px; }
+      #info .info_right #record header {
+        padding-left: 10px;
+        background-color: #81a090;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 11px;
+        color: #fff; }
+      #info .info_right #record table {
+        margin-bottom: 18px;
+        width: 1000px; }
+        #info .info_right #record table tr {
+          background-color: #fff;
+          border-bottom: 2px solid #ccc;
+          font-size: 14px; }
+          #info .info_right #record table tr:last-child {
+            border: none; }
+          #info .info_right #record table tr:nth-child(1) {
+            border: none;
+            height: 45px;
+            font-size: 16px;
+            margin-bottom: 11px; }
+          #info .info_right #record table tr:nth-child(2) {
+            border: none;
+            height: 9px;
+            background-color: #ececec; }
+          #info .info_right #record table tr td {
+            text-align: center; }
+            #info .info_right #record table tr td:nth-child(1) {
+              padding: 13px 30px;
+              text-align: left;
+              width: 25%; }
+
+/*# sourceMappingURL=goods_details.css.map */

@@ -1,0 +1,198 @@
+@import "css3-mixins";
+
+
+
+
+
+$bodybg:#ececec;
+$site-real-width:1200px;
+
+$content-right-height:130px;
+$searchbox-width:500px;
+$searchbox-height:38px;
+
+$nav-color:#81a090;
+
+$classify-item-height:83px;
+$logo-yellow-color:#f3f695;
+
+
+
+
+$site-path-height:50px;
+
+$personal-left-height:content;
+$personal-left-width:200px;
+
+
+$personal-left-head-height:45px;
+
+$personal-touxiang-size:132px;
+
+$personal-left-icon-width:200px;
+$personal-left-icon-height:240px;
+
+$personal-right-height:1020px;
+$personal-right-width:980px;
+
+
+$personal-right-guess-height:545px;
+
+$personal-right-guess-pageturning-height:50px;
+
+$personal-right-guess-list-width:196px;
+$personal-right-guess-list-height:222px;
+
+$footer-height:275px;
+
+$footer-top-height:40px;
+$footer-mid-height:150px;
+
+
+
+
+
+
+
+
+
+
+
+body{
+	background-color: $bodybg;
+}
+a{
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+
+.clearboth{
+	clear: both;
+}
+.container{
+	width: $site-real-width;
+	margin: 0px auto;
+}
+
+
+.site_path{
+	height: $site-path-height;
+	position: relative;
+	line-height: $site-path-height;
+	text-align: left;
+	font-size: 14px;
+	background-color: $bodybg;
+	z-index: 70;
+}
+
+.pageturning{
+	height: 30px;
+	text-align: right;
+	margin-bottom: 18px;
+
+	a{
+		padding: 5px 10px;
+		font-size: 16px;
+		background-color: #fff;
+		color: #333;
+
+		&.toPage{
+			background: none;
+		}
+	}
+	#pageNumber{
+		width: 30px;
+		height: 20px;
+		text-align: center;
+	}
+}
+
+
+ul {
+
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin:0px;
+}
+.clear_both{
+	clear: both;
+}
+
+/*//================Index=========================*/	
+$content-block-margin:30px;
+$content-block-contmargin:26px;
+
+$hot-gm-height:350px;
+
+$publie-color-yellow:#ffbc00;
+
+$hot-item-height:340px;
+$bk_recomm_content-height:500px;
+$bk_recomm_content_LR:370px;
+$icedbeer_height:650px;
+$iced_cont_public_width:290px;
+$iced_cont_f_width:900px;
+$iced_cont_one_middle_height:560px;
+
+	// 进度条样式
+.site_path{
+		width:1200px;
+		margin: 0 auto;
+		font-size: 14px;
+		line-height: 50px;
+	}
+	.curr_steps{
+		position: relative;
+		width:1200px;
+		height: 6px;
+		left: 50%;
+		z-index: 99;
+		background-color: $nav-color;
+		margin-left: -600px;
+		margin-top: 20px;
+
+		.steps{
+			position: absolute;
+			width:30px;
+			height:30px;
+			border-radius:25px;
+			margin-top: -15px;
+			z-index: 999;
+			background-color:#fff;
+			border: 4px $nav-color solid;
+
+			p{
+				position: absolute;
+				left: -80%;
+				top:35px;
+				font-size: 14px;
+				width:80px;
+				text-align: center;
+
+
+			}
+		}
+		
+		.stepsbgcolor{
+			background-color:  $nav-color;
+		}
+		.steps1{
+			left:10%;
+			margin-left: -20px;
+			
+		}
+		.steps2{
+			left:50%;
+			margin-left: -20px;
+		}
+		.steps3{
+			left:90%;
+			margin-left: -20px;
+		}
+	}
+

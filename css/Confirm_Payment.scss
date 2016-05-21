@@ -1,0 +1,149 @@
+@import "config";
+#content{
+	position: relative;
+	width:100%;
+	margin:0 auto;
+	z-index: 99;
+	background-color: $bodybg;
+
+	
+
+	.messagebox{
+		margin:55px auto 0px;
+		width:1200px;
+		height: 200px;
+		background-color: #fff;
+
+		border:4px $nav-color solid;
+		h1{
+			text-align: center;
+			line-height: 200px;
+			font-size: 60px;
+			font-weight: normal;
+			color: $nav-color;
+			img{
+				vertical-align:middle;
+				margin-right: 20px;
+			}
+		}	
+	}
+	.guess_you_like{
+		width:1200px;
+		height:300px;
+		margin: 20px auto;
+		header{ 
+			border-bottom: 2px $nav-color solid;
+			position: relative;
+			h3{
+				background-color: $nav-color;
+				line-height: 45px;
+				width:200px;
+				height:45px;
+				font-size: 16px;
+				font-weight: normal;
+				color: #fff;
+				text-align: center;
+				
+			}
+			span{
+				position: absolute;
+				font-size: 14px;
+				
+				right:0px;
+				bottom:5px;
+				a{
+					color: #333;
+					&:hover{
+						color:#000;
+					}
+				}
+			}
+		}
+
+
+		.guess_you_like_cont{
+			background-color: #fff;
+			margin-top: 10px;
+			padding: 15px 60px;
+			position: relative;
+			height:250px;
+			@include box-sizing(border-box);
+			& > div.content1{
+				width:100%;
+				margin: 0 auto; 
+			
+				position: relative;
+				overflow: hidden;
+				height:240px;
+
+			}
+			
+			ul.scroll {
+				position: absolute;
+				li{
+					width:190px;
+					height:190px;
+					position:relative;
+					border:1px #ccc solid;
+					float:left;
+					margin-right:15px; 
+					
+					padding:5px;
+				
+					&:last-child{
+						margin:0px;
+						
+					}
+					div{
+						text-align: center;
+						img{
+							height: 165px;
+						}
+						
+					}
+					
+					.price{
+							font-size: 14px;
+							color: red;
+						}
+					.title{
+
+						font-size: 12px;
+						color:#333;
+						text-overflow:ellipsis;
+						display: block;
+						height:20px;
+						width: 100%;
+						position: absolute;
+						bottom:-20px;
+						line-height: 20px;
+					}
+
+				}
+			}
+
+
+
+			.toleft,.toright{
+				position: absolute;
+				width:50px;
+				height:100%;
+				text-align: center;
+				font-size: 60px;
+				top:0px;
+				cursor: pointer;
+				
+
+			}
+			.toleft{
+				background: url(../images/icon/toleft.png) no-repeat center;
+				left: 0px;
+			}
+			.toright{
+				background: url(../images/icon/toright.png) no-repeat center;
+				right: 0px;
+			}
+		}
+
+	}
+}

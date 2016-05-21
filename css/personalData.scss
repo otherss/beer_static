@@ -1,0 +1,164 @@
+@import "member";
+
+
+
+.personalData{
+	header{
+		color: #fff;
+		line-height: $personal-left-head-height;
+		text-indent:1.2em;
+		background-color: $nav-color;
+		font-size: 16px;
+		margin-bottom: 11px;
+	}
+	section{
+		background-color: #fff;
+		font-size: 14px;
+		padding: 10px 0px;
+		table{
+			margin-left: 25px;
+			tr{
+				td{
+					padding: 13px;
+					img{
+						width: $personal-touxiang-size;
+						height: $personal-touxiang-size;
+					}
+					input{
+						outline: none;
+						height: 1.8em;
+						padding-left: 5px;
+					}
+					#InputContainer{
+						display: inline-block;
+						background-color: $nav-color;
+						width: 60px;
+						height: 30px;
+						text-align: center;
+						position: relative;
+						span{
+							display: block;
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							line-height: 30px; 
+							color: #fff;
+							z-index: 1;	
+							left: 0px;
+							top: 0px;
+						}
+						#selectImg{
+							display: block;
+							left: 0px;
+							top: 0px;
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							background: #000;
+							cursor: pointer;
+							float: left;
+							@include opacity(0);
+							z-index: 11;
+						}
+					}
+
+					&:first-child{
+						text-align: right;
+					}
+					&:last-child{
+						padding-left: 17px;
+						text-align: left;
+					}
+					.changeDataBtn{
+						border: none;
+						display: inline-block;
+						color: #fff;
+						padding: 0px 27px;
+						line-height: $personal-left-head-height;
+						height: $personal-left-head-height;
+						font-size: 20px;
+						background-color: $nav-color;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		.center520{
+			width: 520px;
+			margin: 0px auto;
+			#progressBar{
+			}
+			form{
+				table{
+					tr{
+						td{
+							font-size: 12px;
+							color: #999;
+							.yanzhengtel{
+								color: #444;
+								margin-right: 10px;
+							}
+							input{
+								margin-right: 5px;	
+								width: 180px;
+								border: 1px solid #ccc;
+								height: 30px;
+								font-size: 16px;
+							}
+							a{
+								color: #333;
+							}
+							.huoqujiaoyanma{
+								border: 1px solid #666;
+								padding: 5px;
+							}
+							&:last-child{
+								padding: 5px 0px;
+							}
+							img.yanzhengma{
+								display: inline-block;
+								border: none;
+								width: 90px;
+								height: 28px;
+							}
+							.changeDataBtn{
+								color: #fff;
+							}
+
+						}
+					}
+				}
+			}
+			.success{
+				width: 500px;
+				height: 140px;
+				line-height: 140px;
+				background: url(../images/icon/duihao.png) no-repeat 78px center;
+				margin-left: 20px;
+				margin: 0x auto;
+				color: $nav-color;
+				font-size: 24px;
+				text-align: center;
+
+
+			}
+
+		}
+		.rollbackBtn{
+			float: right;
+			padding: 10px;
+			color: #fff;
+			background: $nav-color url(../images/icon/fanhui.png) no-repeat 8px center;
+			background-size: 18px 18px;
+			clear: both;
+			padding-left: 30px;
+			margin: -50px 20px;
+		}
+	}
+}
+
+
+
+
+

@@ -1,0 +1,265 @@
+@import "config";
+
+
+
+
+
+#header{
+	height:130px;
+	width:100%;
+	background-color:#fff;
+	.top_content{
+		background-color:#fff;
+		
+		height:100%;
+		width:$site-real-width;
+		margin:0 auto;
+		.content_right{
+			text-align:right;
+			height:$content-right-height;
+			float:right;
+			.statusbar{
+				height:$content-right-height/2;
+				@include box-sizing(border-box);
+				padding-top:25px;
+				ul{
+					list-style:none;
+					margin:0;padding:0;	
+					height:27px;
+					li{
+						float:right;	
+						border:1px solid #ccc;
+						height:27px;
+						line-height:27px;
+						margin-left:20px;
+						
+						a{	
+							text-decoration:none;
+							
+							font-size:14px;	
+							color:#666;
+							padding-left:20px;
+							padding-right:40px;
+							background-repeat:no-repeat;
+							background-position:90%;
+							background-size:23px;
+						
+						}
+						&:nth-child(5) > a{
+							background-image:url(../images/icon/denglu.png);
+						}
+						&:nth-child(4) > a{
+							background-image:url(../images/icon/zhuce.png);
+						}
+						&:nth-child(3) > a{
+							background-image:url(../images/icon/wode.png)
+						}
+						&:nth-child(2) > a{
+							background-image:url(../images/icon/bangzhu.png);
+						}
+						&:nth-child(1) > a{
+							background-image:url(../images/icon/shoucang.png);
+						}
+					}
+				}
+			}
+			.searchbox{
+				@include box-sizing(border-box);
+				width:100%;
+				height:$content-right-height/2;
+				
+				padding-top:10px;
+				.searchbox_left{
+					width:$searchbox-width;
+					height:$searchbox-height;
+					border:2px #ccc solid;
+					float:left;
+					
+					
+					input#search{
+						@include box-sizing(border-box);
+						padding-left:18px;
+						width:460px;
+						float:left;
+						height:38px;
+						border:none;
+						outline: none;
+					}
+					
+					#ss{
+						display:block;
+						width:38px;
+						height:38px;
+						border-left:2px solid #ccc;
+						float:left;
+						background-image:url(../images/icon/sousuo.png);
+						background-size:80%;
+						background-position:center;
+						background-repeat:no-repeat;
+					}
+				}
+				.searchbox_right{float:right;
+					a{	
+						display:block;
+						width:151px; 
+						height:40px;
+						background-color:$nav-color;
+						text-align:center;
+						line-height:40px;
+						text-decoration:none;
+						font-size:18px;
+						margin-left:30px;
+						padding-left:15px;
+						color:#fff;
+					}
+				}
+			}
+		}	
+	}
+
+}
+#nav{height:41px;
+	width:100%;
+	background-color:$nav-color;
+	.nav_content{
+		width:$site-real-width;
+		height:100%;
+		margin:0 auto;
+		position:relative;
+		
+		.logo{
+			width:201px;
+			height:151px;
+			position:absolute;
+			bottom:0px;
+			img{position:absolute;
+			z-index:50}
+			.yy{
+				width:201px;
+				height:41px;
+				box-shadow:#000 0 0 30px;	
+				position:absolute;
+				bottom:0px;
+				z-index:-1px;
+				border-bottom:none;
+			}
+			
+		}
+		.nav_item{
+				position:relative;
+				height:100%;
+				padding-left:222px;
+				ul{
+					margin:0;
+					padding:0;
+					list-style:none;	
+					position:absolute;
+					left:222px;
+					li{
+						width:130px;
+						height:41px;
+					
+						float:left;
+						margin-right:8px;
+						a{
+							display:block;
+							height:100%;
+							width:100%;
+							font-size:18px;
+							color:#fff;
+							text-decoration:none;
+							text-align:center;
+							line-height:41px;
+							
+							&.current,&:hover{
+								background-color:#fff;
+								color:$nav-color;	
+							}	
+						}
+					}
+					
+					
+				/*首页按钮 style*/
+					#home{	
+						display:block;
+						height:41px;
+						width:41px;
+						background-image:url(../images/icon/home.png);
+						background-repeat:no-repeat;
+						background-position:center;
+						background-size:35px;
+						float:left;
+						margin-right:10px;
+							
+					}
+/*				<!--	首页按钮 style-->
+*/						
+				}	
+			}
+	}
+	
+}
+
+section#classify_item{
+	width:100%;
+	height:$classify-item-height;
+	background-color:rgba(252,252,252,1);
+	position:absolute;
+	display: none;
+	z-index: 199;
+	.classify_item_center{
+
+		width:1200px;
+		height:$classify-item-height;
+		
+		margin:0 auto;
+		@include box-sizing(border-box);
+		padding-left:273px;
+		
+		.classify_item_content{
+			height:$classify-item-height;
+			width:1000px;
+			position:relative;
+			padding:10px;
+			@include box-sizing(border-box);
+			.classify_item_content_list{
+				margin:0;padding:0;
+				float:left;
+				width:139px;
+				list-style:none;
+				border-right:1px #ccc solid;
+				
+				li{
+					padding-left:23px;
+					line-height:28px;
+					
+			
+					a{
+						padding:3px 6px;
+						color:#666;
+						text-decoration:none;
+						
+						&:hover,&.classify_current{
+							background:$nav-color;
+							color:$logo-yellow-color;
+						}
+						&:hover &.classify_current{
+							background:none;
+							color: #666;
+						}
+					}	
+				}
+				
+			}	
+			
+			h1{	
+				position:absolute;
+				color:#eee;	
+				font-size:67px;
+				font-family:Impact;
+				top:0px;
+				right:20px;
+			}
+		}
+	}
+}
